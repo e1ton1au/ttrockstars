@@ -19,7 +19,7 @@ const selectorNumpad = `${selectorFootpedal} > ttr-game-numpad > div`;
 
 const doMath = async () => {
   question = document.querySelector(
-    `${selectorFootpedal} > section > ttr-game-soundcheck-input > div`
+    `${selectorFootpedal} > section > ttr-game-soundcheck-input > div > div > div`
   ).textContent;
   answer = calculate(question).toString();
   for (let i = 0; i < answer.length; i++) {
